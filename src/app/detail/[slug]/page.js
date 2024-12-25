@@ -124,7 +124,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function detailPage() {
+export default function DetailPage() {
   const [selectedColor, setSelectedColor] = useState(product.colors[0]);
   const [selectedSize, setSelectedSize] = useState(product.sizes[2]);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

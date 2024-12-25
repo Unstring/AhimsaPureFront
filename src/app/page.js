@@ -78,8 +78,6 @@ const features = [
   { name: 'Includes', description: 'Wood card tray and 3 refill packs' },
   { name: 'Considerations', description: 'Made from natural materials. Grain and color vary with each item.' },
 ]
-const folderPath = path.join(process.cwd(), 'public', 'folders');
-// const folderNames = fs.readdirSync(folderPath).filter(folder => fs.statSync(path.join(folderPath, folder)).isDirectory());
 export default function Home() {
   const router = useRouter()
   return (<>
