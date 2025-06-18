@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <div className="relative">
         {children}
         </div>
-        <div className="fixed w-full p-2 bg-orange-500 text-black text-center" style={{bottom:"0px"}}> testing </div>
+        <div className="fixed w-full p-2 bg-orange-500 text-black text-center" style={{bottom:"0px"}}> we are under maintainence </div>
       </body>
     </html>
   );

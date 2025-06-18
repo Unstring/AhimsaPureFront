@@ -20,55 +20,30 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 const products = [
   {
     id: "redsandalwood",
-    name: 'Red Sandalwood',
+    name: 'A2 Bilona Cow Ghee',
     href: '#',
-    imageSrc: 'https://i.pinimg.com/736x/62/55/91/625591705923972de629a8227eda1477.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
+    imageSrc: 'https://res.cloudinary.com/doocmwds7/image/upload/v1750265150/20250520_1541_Magical_Ahimsa_Jar_remix_01jvpjr524fvbvb0hw4r2bewj5_jtqarq.png',
+    imageAlt: "Cow Ghee.",
+    price: '₹599',//2299
+    color: '250ML',
   },
   {
     id: "teak",
-    name: 'Teak',
+    name: 'A2 Bilona Cow Ghee',
     href: '#',
-    imageSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNVjLrZfGLiDznDi8mUiDTXTtHEGxk2Fxayg&s',
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
+    imageSrc: 'https://res.cloudinary.com/doocmwds7/image/upload/v1750265150/20250519_1500_Ahimsa_Pure_Ghee_Label_remix_01jvky12chfq4v1f0x6z0je8d3_yj3hl8.png',
+    imageAlt: "Cow Ghee.",
+    price: '₹1099',
+    color: '500ML',
   },  {
     id: "lightmaple",
-    name: 'Light maple',
+    name: 'A2 Bilona Cow Ghee',
     href: '#',
-    imageSrc: 'https://t3.ftcdn.net/jpg/03/08/50/34/360_F_308503485_OdBhixJbzT3bdC60rghTKU7vRzk1NrDc.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
-  },  {
-    id: "bluegrey",
-    name: 'Blue grey',
-    href: '#',
-    imageSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjKCKqNzaCCxYm8zypsmobwRnNIK77j4kVen2gXK4JaY4tcPZfChWnR2JkBFXHNjh_3Bk&usqp=CAU',
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
-  },
-  {
-    id: "lightmaple2",
-    name: 'Light maple',
-    href: '#',
-    imageSrc: 'https://t3.ftcdn.net/jpg/03/08/50/34/360_F_308503485_OdBhixJbzT3bdC60rghTKU7vRzk1NrDc.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
-  },  {
-    id: "bluegrey2",
-    name: 'Blue grey',
-    href: '#',
-    imageSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjKCKqNzaCCxYm8zypsmobwRnNIK77j4kVen2gXK4JaY4tcPZfChWnR2JkBFXHNjh_3Bk&usqp=CAU',
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
-  },
+    imageSrc: 'https://res.cloudinary.com/doocmwds7/image/upload/v1750265150/20250519_1500_Ahimsa_Pure_Ghee_Label_remix_01jvky12cme68r75366n8xy62d_hxeis0.png',
+    imageAlt: "Cow Ghee.",
+    price: '₹1899',
+    color: '1000ML',
+  }
 ]
 const features = [
   { name: 'Origin', description: 'Designed by Good Goods, Inc.' },
@@ -88,7 +63,9 @@ export default function Home() {
 
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {products.map((product) => (
-            <div key={product.id} className="group relative" onClick={() => router.push(`/detail/${product.id}`)}>
+            <div key={product.id} className="group relative" 
+            // onClick={() => router.push(`/detail/${product.id}`)}
+            >
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                 <img
                   alt={product.imageAlt}
@@ -119,24 +96,14 @@ export default function Home() {
 
 
     <div className="bg-white">
-      <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+      <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 pt-0 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Technical Specifications</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact us</h2>
           <p className="mt-4 text-gray-500">
-            The walnut wood card tray is precision milled to perfectly fit a stack of Focus cards. The powder coated
-            steel divider separates active cards from new ones, or can be used to archive important task lists.
+            Contact us : <b>contact@ahimsapure.com</b>
           </p>
-
-          <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-            {features.map((feature) => (
-              <div key={feature.name} className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-gray-900">{feature.name}</dt>
-                <dd className="mt-2 text-sm text-gray-500">{feature.description}</dd>
-              </div>
-            ))}
-          </dl>
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+        {/* <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
           <img
             alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
             src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
@@ -157,7 +124,7 @@ export default function Home() {
             src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
             className="rounded-lg bg-gray-100"
           />
-        </div>
+        </div> */}
       </div>
     </div>
 
@@ -167,7 +134,7 @@ export default function Home() {
 
 
 
-    <div className="relative overflow-hidden bg-white">
+    <div className="relative overflow-hidden bg-white hidden">
       <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
         <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
           <div className="sm:max-w-lg">
