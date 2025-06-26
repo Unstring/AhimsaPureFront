@@ -1,6 +1,9 @@
 export const generateStaticParams = async () => {
   return [
     { slug: 'redsandalwood' },
+    { slug: 'cowghe250' },
+    { slug: 'cowghee500' },
+    { slug: 'cowghee1000' },
     { slug: 'teak' },
     { slug: 'lightmaple' },
     { slug: 'bluegrey' },
